@@ -2,7 +2,7 @@
 <project name="Jumph" default="build">
  <property name="toolsdir" value="bin/" />
  <target name="build"
-         depends="prepare,bower,composer,lint,phploc-ci,pdepend,phpmd-ci,phpcs-ci,phpcpd-ci,phpunit,phpdox"
+         depends="prepare,composer,lint,phploc-ci,pdepend,phpmd-ci,phpcs-ci,phpcpd-ci,phpunit,phpdox"
          description=""/>
 
  <target name="build-parallel"
@@ -62,11 +62,11 @@
   </exec>
  </target>
 
- <target name="bower" description="Installing bower dependencies">
+<!--  <target name="bower" description="Installing bower dependencies">
   <exec executable="bower" failonerror="true">
    <arg value="install" />
   </exec>
- </target>
+ </target> -->
 
  <target name="lint" description="Perform syntax check of sourcecode files">
   <apply executable="php" failonerror="true">
