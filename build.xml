@@ -44,12 +44,12 @@
   <property name="prepare.done" value="true"/>
  </target>
 
- <target name="copy-parameters" description="Copy parameters.yml file">
+<!--  <target name="copy-parameters" description="Copy parameters.yml file">
   <exec executable="cp" failonerror="true">
    <arg path="app/config/parameters.yml.dist" />
    <arg path="app/config/parameters.yml" />
   </exec>
- </target>
+ </target> -->
 
  <target name="composer" description="Installing composer dependencies">
   <exec executable="composer" failonerror="true">
